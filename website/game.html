@@ -2,16 +2,22 @@
 <html>
     <head>
         <title>My Virtual Pet</title>
+        <style src="style.css"></style>
     </head>
 
     <body>
         <div id="pet-container">
-            <img id="pet-happy.png" alt="Virtual Pet">
+            <img id="image" alt="Virtual Pet" src="chill_guy-removebg-preview.png">
             <p id="status">I'm feeling happy!</p>
         </div>
 
         <div id="buttons">
-            <button onclick="feedPet()">🍖Feed</button>
+            <button id="feed" onclick="feedPet()">🍖Feed</button>
+            <button id="play" onclick="playWithPet()">🏸Play With Pet</button>
+            <button id="sleep" onclick="sleepPet()">🛏️Put Pet to Sleep</button>
         </div>
+
+        <script src="script.js"></script>
+
     </body>
 </html>
